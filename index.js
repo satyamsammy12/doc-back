@@ -6,6 +6,9 @@ const authRouter = require("./routes/AuthRouter");
 const Adminroutes = require("./routes/Adminroutes");
 const doctorRoutes = require("./routes/doctorRoutes");
 const dotenv = require("dotenv");
+const path = require("path");
+
+app.use(express.static(path.join(__dirname, "build")));
 
 app.use(express.json());
 dotenv.config();
