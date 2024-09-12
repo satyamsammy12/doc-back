@@ -20,6 +20,4 @@ app.use("/api/v1/user", authRouter);
 app.use("/api/v1/admin", Adminroutes);
 app.use("/api/v1/doctor", doctorRoutes);
 
-app.listen(process.env.PORT, () => {
-  console.log("Server is running on port 3000");
-});
+app.listen(process.env.PORT)
